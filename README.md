@@ -1,4 +1,4 @@
-NeonMatrix
+ATAPIHat
 =============================
 
 ![PCB](ATAPIHat.png)
