@@ -659,7 +659,7 @@ $EndComp
 Wire Wire Line
 	5500 2600 5700 2600
 Text Label 5450 1200 0    50   ~ 0
-CS
+CE1
 Text Label 5450 1300 0    50   ~ 0
 SCK
 Text Label 5450 1400 0    50   ~ 0
@@ -667,7 +667,7 @@ MOSI
 Text Label 5450 1500 0    50   ~ 0
 MISO
 Text Label 5450 3950 0    50   ~ 0
-CS
+CE0
 Text Label 5450 4050 0    50   ~ 0
 SCK
 Text Label 5450 4150 0    50   ~ 0
@@ -691,7 +691,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 4250 5450 4250
 Text Label 5050 3500 2    50   ~ 0
-CS
+CE1
 Text Label 5050 3600 2    50   ~ 0
 SCK
 Text Label 5050 3700 2    50   ~ 0
@@ -706,30 +706,8 @@ Wire Wire Line
 	5050 3700 4800 3700
 Wire Wire Line
 	4800 3800 5050 3800
-$Comp
-L power:GND #PWR0120
-U 1 1 5F2DCA84
-P 5500 4850
-F 0 "#PWR0120" H 5500 4600 50  0001 C CNN
-F 1 "GND" V 5505 4722 50  0000 R CNN
-F 2 "" H 5500 4850 50  0001 C CNN
-F 3 "" H 5500 4850 50  0001 C CNN
-	1    5500 4850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5500 4850 5700 4850
-$Comp
-L power:GND #PWR0121
-U 1 1 5F2E178F
-P 5500 2100
-F 0 "#PWR0121" H 5500 1850 50  0001 C CNN
-F 1 "GND" V 5505 1972 50  0000 R CNN
-F 2 "" H 5500 2100 50  0001 C CNN
-F 3 "" H 5500 2100 50  0001 C CNN
-	1    5500 2100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5500 2100 5700 2100
 NoConn ~ 5700 1800
@@ -761,11 +739,11 @@ Wire Wire Line
 Wire Wire Line
 	3200 4200 2850 4200
 Text Label 3200 3800 2    50   ~ 0
-3V_CS
+3V_CE1
 Wire Wire Line
 	2850 3800 3200 3800
 Text Label 3650 3500 0    50   ~ 0
-3V_CS
+3V_CE1
 Wire Wire Line
 	4000 3500 3650 3500
 $Comp
@@ -779,11 +757,9 @@ F 3 "" H 4400 4500 50  0001 C CNN
 	1    4400 4500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4800 3900
 NoConn ~ 4800 4000
 NoConn ~ 4800 4100
 NoConn ~ 4800 4200
-NoConn ~ 4000 3900
 NoConn ~ 4000 4000
 NoConn ~ 4000 4100
 NoConn ~ 4000 4200
@@ -1291,10 +1267,10 @@ Connection ~ 10050 800
 Wire Wire Line
 	10050 800  10300 800 
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0115
 U 1 1 5F619B2D
 P 5500 5550
-F 0 "#PWR?" H 5500 5400 50  0001 C CNN
+F 0 "#PWR0115" H 5500 5400 50  0001 C CNN
 F 1 "+5V" V 5500 5750 50  0000 C CNN
 F 2 "" H 5500 5550 50  0001 C CNN
 F 3 "" H 5500 5550 50  0001 C CNN
@@ -1302,14 +1278,48 @@ F 3 "" H 5500 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0116
 U 1 1 5F625B11
 P 5500 2700
-F 0 "#PWR?" H 5500 2550 50  0001 C CNN
+F 0 "#PWR0116" H 5500 2550 50  0001 C CNN
 F 1 "+5V" V 5500 2900 50  0000 C CNN
 F 2 "" H 5500 2700 50  0001 C CNN
 F 3 "" H 5500 2700 50  0001 C CNN
 	1    5500 2700
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 5F39B9FE
+P 5500 4850
+F 0 "#PWR0120" H 5500 4700 50  0001 C CNN
+F 1 "+5V" V 5500 5050 50  0000 C CNN
+F 2 "" H 5500 4850 50  0001 C CNN
+F 3 "" H 5500 4850 50  0001 C CNN
+	1    5500 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0121
+U 1 1 5F3A96B5
+P 5500 2100
+F 0 "#PWR0121" H 5500 1950 50  0001 C CNN
+F 1 "+5V" V 5500 2300 50  0000 C CNN
+F 2 "" H 5500 2100 50  0001 C CNN
+F 3 "" H 5500 2100 50  0001 C CNN
+	1    5500 2100
+	0    -1   -1   0   
+$EndComp
+Text Label 3650 3900 0    50   ~ 0
+3V_CE0
+Wire Wire Line
+	4000 3900 3650 3900
+Text Label 3200 3900 2    50   ~ 0
+3V_CE0
+Wire Wire Line
+	2850 3900 3200 3900
+Text Label 5050 3900 2    50   ~ 0
+CE0
+Wire Wire Line
+	5050 3900 4800 3900
 $EndSCHEMATC
